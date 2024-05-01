@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>appointment</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><h2>Vaccine Tracker</h2></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="Contact-us.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logout">
+          <a class="nav-link logout" href="index.html">Logout</a>
+        </div>
+      </nav>
+      <div class="div1" style="height: 683px;">
+        <div class="appnt_div">
+          <h3>Welcome to appointment</h3>
+          <form class="login_form">
+            Date :   <input type="date" name="vdate" required> <br />
+            <br />
+            Time :   <input type="time" name="apptTime" required> <br />
+            <br />
+            Select Dr. :    
+            <select name="drname">
+                <option selected disabled value=""required>Choose...</option>
+                <option>Dr.Srujala Adabala</option>
+                <option>Dr.Swetha vejella</option>
+                <option>Dr.Ranjit kilje</option>
+                <option>Dr.Swathi k</option>
+            </select><br> <br>
+            Venue  :   
+            <select name="vname">
+                <option selected disabled value=""required>Choose...</option>
+                <option>Madhapur</option>
+                <option>Hitech city</option>
+                <option>Ameerpet</option>
+                <option>Kukatpally</option>
+            </select><br> <br>
+            <a class="btn btn-primary" href="appntschedule.html">submit</a>
+            
+          </form>
+        </div>
+      </div>
+</body>
+</html>
